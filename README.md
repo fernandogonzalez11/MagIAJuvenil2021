@@ -4,6 +4,8 @@ Todo el código, recursos, etc. que tenga relacionados al proyecto de Microsoft 
 ### Instalación y Ejecución
 `git clone https://github.com/fernandogonzalez11/MagIAJuvenil2021` Clonar el proyecto a un directorio (puedes poner un directorio específico dando un nombre después del link)
 
+`cd directorioPorIr` Ir al directorio con el código a ejecutar
+
 `npm i` Instalar los paquetes de npm
 
 `node archivoPorAbrir.js` (`node .` por defecto) Abrir node en `.`, donde `.` es la propiedad `main` en package.json
