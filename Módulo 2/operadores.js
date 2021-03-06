@@ -113,3 +113,33 @@ log("5 >= 10:", res);
 // Menor o igual que ( <= )
 res = op1 <= op3;
 log("5 <= 10:", res);
+
+/* OPERADORES LÓGICOS BOOLEANOS */
+op1 = 5, op2 = 20, op3 = 30;
+
+// Operador AND/Y ( && )
+res = (op1 < op2) && (op2 < op3);
+log("Operador AND:", res);
+
+// Operador OR/O ( || )
+res = (op1 < op2) || (op2 < op3);
+log("Operador OR:", res);
+
+// Operador NOT/NO ( ! )
+res = !((op1 < op2) || (op2 < op3));
+log("Operador NOT:", res);
+
+/*
+true && true -> true
+true && false -> false
+false && true -> false
+false && false -> false
+
+true || true -> true
+true || false -> true
+false || true -> true
+false || false -> false
+
+!true -> false
+!false -> true
+*/

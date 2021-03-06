@@ -48,11 +48,3 @@ const persona = {
     edad: 14,
     lugarNacimiento: "Costa Rica"
 };
-// Object - Carro
-const carro = {
-    nombre: "Mustang",
-    marca: "Ford",
-    placa: "BCI-298",
-    fabricacion: 1964,
-    precio: 2368
-};
