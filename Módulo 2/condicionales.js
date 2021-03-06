@@ -11,7 +11,7 @@ if ((a < b) && (b < c)) { // Si esto da true
     log("Estás en el", green("if"));
 }
 else if (a < c) {
-    log("Estás en el", green("else if"))
+    log("Estás en el", green("else if"));
 }
 else {       // Si esto da false 
     log("Estás en el", green("else"));
