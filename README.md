@@ -10,4 +10,4 @@ Todo el código, recursos, etc. que tenga relacionados al proyecto de Microsoft 
 
 `node archivoPorAbrir.js` (`node .` por defecto) Abrir node en `.`, donde `.` es la propiedad `main` en package.json
 
-Y ya lol
+y ya lol
