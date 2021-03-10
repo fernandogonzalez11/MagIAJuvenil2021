@@ -83,7 +83,7 @@ function handleError(err) {
     setTimeout(() => scanner.close(), 2000);
 }
 
-// Cuando el escáner se cierra. Va a limpiar la terminal, imprimir un mensaje y esperar 1s para cerrarse
+// Cuando el escáner se cierra. Limpia la terminal, imprimir un mensaje y esperar 1s para cerrarse
 scanner.on("close", () => {
     console.clear();
     console.log(chalk.green("Apagando la máquina..."));
