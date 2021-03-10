@@ -8,7 +8,7 @@ log(blue("ESTRUCTURAS DE CONTROL"));
 
 // Condicional if-else
 if ((a < b) && (b < c)) { // Si esto da true
-    log("Estás en el", green("if"));
+    if (a < c) log("Estás en el", green("if"));
 }
 else if (a < c) {
     log("Estás en el", green("else if"));
