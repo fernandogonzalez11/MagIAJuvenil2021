@@ -1,5 +1,5 @@
-const chalk = require("chalk"); // Usar chalk para colores en la terminal
-const readline = require("readline"); // Usar readline de Node para leer input
+const chalk = require('chalk'); // Usar chalk para colores en la terminal
+const readline = require('readline'); // Usar readline de Node para leer input
 const { log, error } = console; // Acortar console.log() a solo log(); igual con error()
 
 /* Ejercicio #1
@@ -33,10 +33,10 @@ Con amor Fernando (๑・ω・๑)
 
 // Estos son los datos de los productos en un Object[]
 const codes = [
-    { codigo: "xc23", nombre: "chocolate", precio: 12.5 },
-    { codigo: "c4f2", nombre: "paleta", precio: 5.75 },
-    { codigo: "gt74", nombre: "chicle", precio: 4.25 },
-    { codigo: "l3k8", nombre: "galleta", precio: 9.10 }
+    { codigo: 'xc23', nombre: 'chocolate', precio: 12.5 },
+    { codigo: 'c4f2', nombre: 'paleta', precio: 5.75 },
+    { codigo: 'gt74', nombre: 'chicle', precio: 4.25 },
+    { codigo: 'l3k8', nombre: 'galleta', precio: 9.10 }
 ];
 
 // La interfaz de input
@@ -49,26 +49,26 @@ const scanner = readline.createInterface({
 /** @type {{codigo:string,nombre:string,precio:number}} */ let res; // Regresa el Object con los datos del producto
 
 // Pide el primer input y evalúa la respuesta
-scanner.question(chalk.blue("Digita el código del producto: "), ans => {
+scanner.question(chalk.blue('Digita el código del producto: '), ans => {
     inputCod = ans; // Guarda el valor a una variable para usar después
     res = codes.find(c => c.codigo == inputCod); // Si la pongo en inicialización pone undefined
 
     // O el código está malo, o el programador está malo jaj
-    if (!res) return handleError("El código es incorrecto, ingresa uno válido");
+    if (!res) return handleError('El código es incorrecto, ingresa uno válido');
 
     // log(res); // Esto es debug
 
     // Pide el segundo input y evalúa (sí, necesitaba hacerlo con nesting o se dañaba)
-    scanner.question(chalk.blue("Digita la cantidad a pagar: "), ans => {
+    scanner.question(chalk.blue('Digita la cantidad a pagar: '), ans => {
         ans = parseFloat(ans); // De String a Number (Float)
         // Por si el pago no es un número
-        if (Number.isNaN(ans) || ans < 0) return handleError("El pago es un dato inválido, por favor incluye un"+
-        " número positivo con o sin decimales!");
+        if (Number.isNaN(ans) || ans < 0) return handleError('El pago es un dato inválido, por favor incluye un'+
+        ' número positivo con o sin decimales!');
 
         // log(ans); // Otro debug
 
         // Si no hay suficiente dinero
-        if (ans < res.precio) return handleError("No hay suficiente dinero para comprar este producto");
+        if (ans < res.precio) return handleError('No hay suficiente dinero para comprar este producto');
         // Compra el chunche
         log(`Compra de ${res.nombre} exitosa, gracias por su preferencia`);
         // Si hay dinero de sobra (momento pagar con 10 rojos)
@@ -85,9 +85,9 @@ function handleError(err) {
 }
 
 // Cuando el escáner se cierra. Limpia la terminal, imprimir un mensaje y esperar 1s para cerrarse
-scanner.on("close", () => {
+scanner.on('close', () => {
     console.clear();
-    console.log(chalk.green("Apagando la máquina..."));
+    console.log(chalk.green('Apagando la máquina...'));
     setTimeout(() => {
         process.exit(0);
     }, 1000);
