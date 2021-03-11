@@ -9,6 +9,8 @@
   "author": "Fernando González Robles",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.0",
+    "common-tags": "^1.8.0",
+    "prompt-sync": "^4.2.0"
   }
 }
