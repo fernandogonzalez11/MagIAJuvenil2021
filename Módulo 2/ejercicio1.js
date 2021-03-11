@@ -62,7 +62,8 @@ scanner.question(chalk.blue("Digita el código del producto: "), ans => {
     scanner.question(chalk.blue("Digita la cantidad a pagar: "), ans => {
         ans = parseFloat(ans); // De String a Number (Float)
         // Por si el pago no es un número
-        if (!ans) return handleError("El pago es un dato inválido, por favor incluye un número con o sin decimales!");
+        if (Number.isNaN(ans) || ans < 0) return handleError("El pago es un dato inválido, por favor incluye un"+
+        " número positivo con o sin decimales!");
 
         // log(ans); // Otro debug
 
@@ -80,7 +81,7 @@ scanner.question(chalk.blue("Digita el código del producto: "), ans => {
 // Esto es solo para cerrar el escáner y poner el error en rojito cuando haya uno
 function handleError(err) {
     error(chalk.red(err));
-    setTimeout(() => scanner.close(), 2000);
+    setTimeout(() => scanner.close(), 3000);
 }
 
 // Cuando el escáner se cierra. Limpia la terminal, imprimir un mensaje y esperar 1s para cerrarse
