@@ -29,24 +29,44 @@ for (let i = 0; i < (palabra.length * 2); i++) {
     let cur = prompt(magenta('Ingresa la letra: '));
     switch (cur) {
         case palabra[0]: {
+            if (adivinado[0] == palabra[0]) {
+                log(red('Ya escribiste esa letra!'));
+                log(blue(adivinado.join(' ')));
+                break;
+            }
             adivinado[0] = palabra[0];
             log(blue(adivinado.join(' ')));
             aciertos++;
             break;
         }
         case palabra[1]: {
+            if (adivinado[1] == palabra[1]) {
+                log(red('Ya escribiste esa letra!'));
+                log(blue(adivinado.join(' ')));
+                break;
+            }
             adivinado[1] = palabra[1];
             log(blue(adivinado.join(' ')));
             aciertos++;
             break;
         }
         case palabra[2]: {
+            if (adivinado[2] == palabra[2]) {
+                log(red('Ya escribiste esa letra!'));
+                log(blue(adivinado.join(' ')));
+                break;
+            }
             adivinado[2] = palabra[2];
             log(blue(adivinado.join(' ')));
             aciertos++;
             break;
         }
         case palabra[3]: {
+            if (adivinado[3] == palabra[3]) {
+                log(red('Ya escribiste esa letra!'));
+                log(blue(adivinado.join(' ')));
+                break;
+            }
             adivinado[3] = palabra[3];
             log(blue(adivinado.join(' ')));
             aciertos++;
@@ -60,5 +80,5 @@ for (let i = 0; i < (palabra.length * 2); i++) {
         }
     }
     if (aciertos == 4) { log(green('Acertaste pog!')); break;}
-    if (intentos == 0) { log(red('Fallaste bruh')); break;}
+    if ((intentos == 0)) { log(red('Fallaste bruh')); break;}
 }
