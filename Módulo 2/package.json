@@ -2,7 +2,7 @@
   "name": "modulo2",
   "version": "1.0.0",
   "description": "Código del Módulo 2 de MagIA Juvenil 2021",
-  "main": "condicionales3.js",
+  "main": "funciones1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
