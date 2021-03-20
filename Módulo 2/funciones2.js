@@ -71,3 +71,8 @@ function () {
 }
 console.log(i) // esto no
 ------------------------------------- */
+multiplicar(14);
+function multiplicar(x) {
+    console.log('Resultado:', x * 2);   
+}
+multiplicar(15);
