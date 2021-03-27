@@ -9,7 +9,7 @@ let persona = {
 
 let { nombre, apellido } = persona;
 
-log('El nombre de los participantes es:', nombre, apellido);
+log('El nombre de la persona es:', nombre, apellido);
 // Sin destructuración: persona.nombre, persona.apellido //
 
 // Ejemplo #2
@@ -31,5 +31,30 @@ let idEnvio, peso;
 log(idEnvio);
 
 // Valor por defecto
-const { apellido: apellidoSustituto = 'López' } = persona;
-console.log('El nombre es:', nombre, apellido);
+let persona2 = { nombre2: 'Omar', edad: 20 };
+let { nombre2, apellido: apellido3 = 'López' } = persona2;
+console.log('El nombre es:', nombre2, apellido3);
+
+let envio = {
+    numEnvio: '337',
+    producto: 'Videojuego'
+};
+
+function datosEnvio({ numEnvio, producto }) {
+    console.log('Número del envío:', numEnvio,
+        '\nProducto a enviar:', producto);
+}
+
+datosEnvio(envio);
+
+let obj = {
+    other: {
+        otherother: {
+            thing: 'this'
+        }
+    }
+};
+
+// Nested destructuring (esto siempre lo quise saber jsjsj)
+const {other: { otherother: { thing } }} = obj;
+console.log(thing);
