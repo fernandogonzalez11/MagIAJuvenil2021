@@ -1,0 +1,19 @@
+{
+  "name": "modulo-3",
+  "version": "1.0.0",
+  "description": "Módulo 3 de MagIA Juvenil",
+  "main": "null",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandogonzalez11/MagIAJuvenil2021.git"
+  },
+  "author": "Fernando González",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandogonzalez11/MagIAJuvenil2021/issues"
+  },
+  "homepage": "https://github.com/fernandogonzalez11/MagIAJuvenil2021#readme"
+}
