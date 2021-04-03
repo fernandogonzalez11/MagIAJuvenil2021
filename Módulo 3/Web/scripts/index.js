@@ -1,8 +1,8 @@
-console.log('funny');
 // true:  en_US //
 // false: es_LA //
 let lang = true;
 
+// Los textos en inglés y español
 const locales = {
     'en_US': {
         'topBar': [
@@ -46,29 +46,34 @@ const locales = {
     }
 };
 
-
+// al clickear "Más Info"
 function info() {
     lang ? Swal.fire('no xd') : Swal.fire('no lol');
 } 
 
+// muestra "Sobre Mí"
 function aboutMe() {
     document.getElementById('parrafo1').innerHTML = lang ? locales['es_LA']['text'].join('<br>') : locales['en_US']['text'].join('<br>');
 }
 
+// Cambiar de lenguaje
 function toggleLang() {
-    lang = !lang;
+    lang = !lang; // Cambia lang al opuesto
 
+    // TODO: trabajar con localStorage (luego)
     localStorage.setItem('lang', lang);
     console.log(localStorage.getItem('lang'));
     
-    console.log('cambiado a', lang);
+    console.log('cambiado a', lang); // Debug log
+    // Toma los locales
     const { topBar, header } = lang ? locales['es_LA'] : locales['en_US'];
-    lang ? locales['es_LA'] : locales['en_US'];
 
+    // Cambia el ícono
     let icon = document.getElementById('icon');
     icon.src = lang ? 'assets/taco.png' : 'assets/borgar.png';
     alt = lang ? 'english' : 'spanish';
 
+    // Cambia los demás elementos
     const curElems = document.getElementsByClassName('topBarElem');
     for (i = 0; i < curElems.length; i++) {
         curElems[i].innerHTML = topBar[i];
