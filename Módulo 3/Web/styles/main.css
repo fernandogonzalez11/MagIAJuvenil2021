@@ -1,6 +1,49 @@
+/* El cuerpo, en otras palabras casi todo */
 body {
+    background-color: #181a1b;
+    color: #FFFFFF;
     font-family: 'Noto Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
 }
+
+/* Los links */
 a {
+    color:aqua;
+}
+
+/* Para cuando se quiera monospace */
+.mono {
     font-family: 'Fira Code', 'Cascadia Code', 'Consolas', sans-serif;
 }
+
+/* El contenedor de flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Para cuando se ocupe wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Helper para centrar cosas verticales */
+.center-helper {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Y sus elementos */
+.center-elem {
+    vertical-align: middle;
+}
+
+/* Los íconos */
+#icon {
+    height: 24px;
+    width: 24px;
+}
+
+/* El navbar horizontal de arriba */
+#topbar1 {
+    height: 15%;
+}
+
