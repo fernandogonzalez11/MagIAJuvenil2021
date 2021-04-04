@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Título -->
+        <title>funny 2</title>
+        <!-- Ícono -->
+        <link rel="icon" type="image/png" href="assets/funi.png">
+        <!-- Usar UTF-8 -->
+        <meta charset="UTF-8">
+        <!-- Importar mi CSS -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+        <!-- SweetAlert -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <link type="text/css" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+        <!-- Importar mi JS -->
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </head>
+    <body>
+        <div class="flex-container" id="topbar1"> <!-- El contenedor -->
+            <!-- Los elementos (tengo que usar span para párrafos y así) -->
+            <span><a class="topBarElem mono" href="index2.html" target="_blank"></a></span>
+            <span><a class="topBarElem mono" href="https://github.com/fernandogonzalez11/MagIAJuvenil2021/" target="_blank"></a></span>
+            <span><a class="topBarElem mono" href="https://github.com/fernandogonzalez11/MagIAJuvenil2021/tree/main/M%C3%B3dulo%203" target="_blank"></a></span>
+            <span><a class="topBarElem mono" href="#" onclick="aboutMe()"></a></span>
+            <span><a class="topBarElem mono" href="#" onclick="info()"></a></span>
+            <img id="icon" type="image/png"  alt="español" onclick="toggleLang()">
+        </div>
+        <div style="text-align: center;">
+            <h1 id="header1"></h1> <!-- Título -->
+        </div>
+        <div class="flex-container flex-wrap">
+            <img class="gif" style="width:26%;">
+            <!-- Tenía que ser (9) funny cirno reference -->
+            <img class="gif" style="width:37%;">
+            <img class="gif" style="width:26%;">
+
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <!-- Texto lol funny -->
+            <span id="parrafo1"></span>
+        </div>
+    </body>
+    <script src="scripts/loadGifs.js"></script>
+</html>

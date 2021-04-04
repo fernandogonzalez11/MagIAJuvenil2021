@@ -22,7 +22,12 @@ a {
 /* El contenedor de flexbox */
 .flex-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+/* Los elementos gifs (pa que no se salgan de control con el flexbox) */
+.gif {
+    max-height: 270px;
 }
 
 /* Para cuando se ocupe wrap */
@@ -30,20 +35,11 @@ a {
     flex-wrap: wrap;
 }
 
-/* Helper para centrar cosas verticales */
-.center-helper {
-    display: inline-block;
-    vertical-align: middle;
-}
-/* Y sus elementos */
-.center-elem {
-    vertical-align: middle;
-}
-
 /* Los íconos */
 #icon {
     height: 24px;
     width: 24px;
+    vertical-align: middle;
 }
 
 /* El navbar horizontal de arriba */
