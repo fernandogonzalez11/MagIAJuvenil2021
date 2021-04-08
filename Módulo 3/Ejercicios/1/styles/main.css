@@ -1,0 +1,95 @@
+/* Importar fuentes (Noto Sans, Fira Code) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css');
+@font-face {
+    font-family: Comfortaa;
+    src: url('../assets/comfortaa.otf') format('opentype');
+}
+
+/* El cuerpo, en otras palabras casi todo */
+body {
+    background-color: #212121;
+    color: #FFFFFF;
+    font-family: 'Noto Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+/* Para cuando se quiera monospace */
+.mono {
+    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+}
+
+/* El contenedor de flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* El navbar */
+.navbar {
+    font-size: 1.1em;
+    margin: 30px 400px;
+}
+
+/* Los botones cuando NO se pasa el mouse sobre ellos */
+.navbar a {
+    display: inline-block;
+    background-color: #a52a2a;
+    padding: 12px;
+    border-radius: 40px;
+}
+
+/* Los botones cuando se pasa el mouse sobre ellos */
+.navbar a:hover {
+    background-color: rgb(128, 31, 31);
+}
+
+/* Los títulos */
+.header {
+    text-align: center;
+    vertical-align: middle;
+    font-family: Comfortaa, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+/* La caja de texto (Pasado y Presente) */
+.textbox {
+    justify-content: center;
+    margin: 2em 8em;
+    max-width: 80em;
+}
+
+/* Las imágenes en él */
+.textbox img {
+    border-radius: 40px;
+}
+
+/* Los párrafos (para que tengan una linda cajita) */
+.paragraph {
+    border: dashed medium cadetblue;
+    /*border-width: medium;*/
+    max-width: 31em;
+    padding: 0em 1em;
+}
+
+/* El navbar inferior */
+.bottombar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: rgba(95, 158, 160, 0.4);
+    padding: 5px 0;
+}
+
+/* Los links del navbar inferior */
+.bottombar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Lo mismo pero cuando se pasa el mouse encima xd */
+.bottombar a:hover {
+    color: rgb(160, 160, 160)
+}

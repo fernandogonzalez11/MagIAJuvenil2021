@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Español -->
+<html lang="es" prefix="og: https://ogp.me/ns#">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Rich embedding -->
+    <meta property="og:title" content="Monumento a las Garantías Sociales">
+    <meta property="og:description" content="Información sobre el Monumento a las Garantías Sociales. Realizado por @fernandogonzalez11 en GitHub">
+    <meta property="og:image" content="https://fernandogonzalez11.github.io/assets/cr.png">
+    <!-- Título e ícono -->
+    <title>Monumento</title>
+    <link rel="icon" href="assets/cr.png">
+    <!-- Import my shit -->
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/index.js"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Los títulos principales (headers) -->
+    <div class="header">
+        <h2>Monumentos de Costa Rica<br><span style="color:teal;">Garantías Sociales</span></h2>
+    </div>
+    <!-- Los botones de Pasado y Presente -->
+    <div class="flex-container navbar header" style="justify-content: space-around;">
+        <a onclick="toggleText('pasado')">Pasado</a>
+        <span>←  Escoge  →</span>
+        <a onclick="toggleText('presente')">Presente</a>
+    </div>
+    <!-- El contenido que se muestra al presionar Pasado -->
+    <div id="pasado" class="flex-container textbox" style="display: none;">
+        <!-- La imagen -->
+        <img src="assets/monumento-pasado.jpg" style="height: 21em; width: 25em;">
+        <pre>      </pre>
+        <!-- El párrafo -->
+        <div class="paragraph">
+            <h3>Pasado</h3>
+            <p>Fue construida en Septiembre de 1993 por el escultor Olger Villegas.<br>
+            Se encontraba en una rotonda de Zapote apodada con el mismo nombre. Esta rotonda es el punto de entrada para varios puntos cercanos, como San Pedro, San Sebastián y Santa Ana.<br>
+            Esta estatua conmemora la aplicación de las Garantías Sociales en el gobierno de Calderón Guardia en 1940. Las Garantías Sociales eran una serie de reformas políticas en beneficio de las clases trabajadoras. Estas garantías ayudaron y ayudan a brindar servicios esenciales a la población, mejorando las condiciones del país.<br>
+            La estatua presentaba figuras memorables como el presidente Calderón, además de campesinos, representando el trabajo como un elemento importante para el progreso del país.<br>
+            </p>
+        </div>
+    </div>
+    <!-- El contenido que se muestra al presionar Pasado -->
+    <div id="presente" class="flex-container textbox" style="display: none;">
+        <!-- La imagen -->
+        <img src="assets/monumento-presente.jpg" style="height: 21em; width: 25em;">
+        <pre>      </pre>
+        <!-- El párrafo -->
+        <div class="paragraph">
+            <h3>Presente</h3>
+            <p>Fue construida en Septiembre de 1993 por el escultor Olger Villegas.<br>
+            Actualmente, el monumento fue dañado por un accidente automovilístico, por lo que está en proceso de restauración. Hay una posibilidad de que se incluya el nuevo monumento en el parque, pero por mientras la rotonda presenta un parque con bastante más zona verde. <br>
+            De hecho, el monumento ya tiene su propio espacio asignado, en donde se espera ser puesto en algún tiempo en el futuro.
+            </p>
+        </div>
+    </div>
+    <!-- La barra de informaciones al fondo -->
+    <div class="flex-container mono bottombar">
+        <!-- Código Fuente (GitHub), mi nombre y país, Sobre Mí (envía a funny 2) -->
+        <a href="https://github.com/fernandogonzalez11/MagIAJuvenil2021/tree/main/M%C3%B3dulo%203/Ejercicios/1" target="_blank"><i class="fas fa-code"></i> Código Fuente</a>
+        Fernando González, Costa Rica
+        <a href="https://fernandogonzalez11.github.io/PaginaWeb1" target="_blank"><i class="fas fa-user"></i> Sobre Mí</a>
+    </div>
+</body>
+</html>
