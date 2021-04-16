@@ -16,7 +16,7 @@ a {
 
 /* Para cuando se quiera monospace */
 .mono {
-    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', sans-serif;
+    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
 }
 
 /* El contenedor de flexbox */
