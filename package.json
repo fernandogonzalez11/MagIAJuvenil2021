@@ -1,0 +1,35 @@
+{
+  "name": "magia-juvenil-2021-fernandog",
+  "version": "1.0.0",
+  "description": "MagIA Juvenil 2021, de Fernando González",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandogonzalez11/MagIAJuvenil2021.git"
+  },
+  "keywords": [
+    "ia",
+    "ai",
+    "young",
+    "joven",
+    "2021",
+    "fernando",
+    "javascript",
+    "html"
+  ],
+  "author": "Fernando González",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandogonzalez11/MagIAJuvenil2021/issues"
+  },
+  "homepage": "https://github.com/fernandogonzalez11/MagIAJuvenil2021#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "common-tags": "^1.8.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
